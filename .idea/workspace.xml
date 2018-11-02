@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2f3ac7dc-5b43-4bad-a98f-099f9b627174" name="Default" comment="" />
+    <list default="true" id="2f3ac7dc-5b43-4bad-a98f-099f9b627174" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/fb-test/fbTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/fb-test/fbTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fbTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fbTest.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -11,17 +15,20 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/fb_test$fbTest.ic" NAME="fbTest Coverage Results" MODIFIED="1540095939323" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/fb_test$fbTest.ic" NAME="fbTest Coverage Results" MODIFIED="1540890044972" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="fbTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/fbTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="43">
-              <caret line="547" column="79" selection-start-line="547" selection-start-column="74" selection-end-line="547" selection-end-column="79" />
+            <state relative-caret-position="143">
+              <caret line="122" column="17" selection-start-line="122" selection-start-column="17" selection-end-line="122" selection-end-column="17" />
               <folding>
-                <marker date="1540095980456" expanded="true" signature="1198:1299" ph="..." />
+                <element signature="e#2869#2878#0" expanded="true" />
+                <element signature="e#3065#3082#0" expanded="true" />
+                <element signature="e#3402#3419#0" expanded="true" />
+                <marker date="1541146863772" expanded="true" signature="1364:1465" ph="..." />
               </folding>
             </state>
           </provider>
@@ -51,7 +58,15 @@
       <find>Node</find>
       <find>delletChar</find>
       <find>findTheSmallestWindowInAStringContainingAllCharactersOfAnotherString</find>
+      <find>endl</find>
+      <find>lenOfLongSubarr</find>
+      <find>swap</find>
+      <find>nge</find>
+      <find>next</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -69,14 +84,18 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1920" />
-    <option name="height" value="1200" />
+    <option name="x" value="41" />
+    <option name="y" value="23" />
+    <option name="width" value="1399" />
+    <option name="height" value="877" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -88,9 +107,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="RunDashboard">
@@ -177,28 +195,28 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.3288889" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32848486" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="3" sideWeight="0.49913043" weight="0.3297568" />
+      <window_info anchor="right" id="Maven Projects" order="3" sideWeight="0.4958217" weight="0.3297568" />
       <window_info anchor="right" id="REPL" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.12969697" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="Coverage" order="3" sideWeight="0.5008696" side_tool="true" visible="true" weight="0.0" />
-      <window_info anchor="right" id="Leiningen" order="3" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.07636364" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.20484848" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="right" id="Leiningen" order="3" sideWeight="0.49860725" weight="0.3297568" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.2" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09585121" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.0014306152" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" sideWeight="0.49913344" visible="true" weight="0.0" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.30545455" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.2678788" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Coverage" order="3" sideWeight="0.50086653" side_tool="true" visible="true" weight="0.0" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -214,61 +232,67 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/fbTest.java</url>
-          <line>677</line>
+          <line>1209</line>
           <properties />
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/fbTest.java</url>
-          <line>626</line>
+          <line>1158</line>
           <properties />
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/fbTest.java</url>
-          <line>733</line>
+          <line>1265</line>
           <properties />
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/fbTest.java</url>
-          <line>750</line>
+          <line>1282</line>
           <properties />
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/fbTest.java</url>
-          <line>582</line>
+          <line>1114</line>
           <properties />
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/fbTest.java</url>
-          <line>527</line>
+          <line>1059</line>
           <properties />
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/fbTest.java</url>
-          <line>547</line>
+          <line>1079</line>
           <properties />
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/fbTest.java</url>
-          <line>71</line>
+          <line>88</line>
           <properties />
           <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/fbTest.java</url>
-          <line>76</line>
+          <line>93</line>
           <properties />
           <option name="timeStamp" value="39" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/fbTest.java</url>
+          <line>234</line>
+          <properties />
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/fbTest.java</url>
-          <line>599</line>
+          <line>1131</line>
           <properties class="fbTest" method="twins">
             <option name="EMULATED" value="true" />
           </properties>
@@ -276,7 +300,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/fbTest.java</url>
-          <line>614</line>
+          <line>1146</line>
           <properties class="fbTest" method="checkString">
             <option name="EMULATED" value="true" />
           </properties>
@@ -284,7 +308,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/fbTest.java</url>
-          <line>699</line>
+          <line>1231</line>
           <properties class="fbTest" method="findNumber">
             <option name="EMULATED" value="true" />
           </properties>
@@ -292,7 +316,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/fbTest.java</url>
-          <line>716</line>
+          <line>1248</line>
           <properties class="fbTest" method="decode">
             <option name="EMULATED" value="true" />
           </properties>
@@ -300,7 +324,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/fbTest.java</url>
-          <line>776</line>
+          <line>1308</line>
           <properties class="fbTest" method="delletChar">
             <option name="EMULATED" value="true" />
           </properties>
@@ -308,7 +332,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/fbTest.java</url>
-          <line>574</line>
+          <line>1106</line>
           <properties class="fbTest" method="split">
             <option name="EMULATED" value="true" />
           </properties>
@@ -316,7 +340,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/fbTest.java</url>
-          <line>497</line>
+          <line>1029</line>
           <properties class="fbTest" method="findTheSmallestWindowInAStringContainingAllCharactersOfAnotherString">
             <option name="EMULATED" value="true" />
           </properties>
@@ -324,7 +348,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/fbTest.java</url>
-          <line>455</line>
+          <line>987</line>
           <properties class="fbTest" method="LongestSubstringWithMUniqueCharacters">
             <option name="EMULATED" value="true" />
           </properties>
@@ -332,7 +356,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/fbTest.java</url>
-          <line>798</line>
+          <line>1330</line>
           <properties class="fbTest" method="AnagramSubstringSearch">
             <option name="EMULATED" value="true" />
           </properties>
@@ -340,7 +364,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/fbTest.java</url>
-          <line>789</line>
+          <line>1321</line>
           <properties class="fbTest" method="compare">
             <option name="EMULATED" value="true" />
           </properties>
@@ -348,7 +372,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/fbTest.java</url>
-          <line>434</line>
+          <line>966</line>
           <properties class="fbTest" method="removeComment">
             <option name="EMULATED" value="true" />
           </properties>
@@ -356,7 +380,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/fbTest.java</url>
-          <line>424</line>
+          <line>956</line>
           <properties class="fbTest" method="microsoftColumToNumber">
             <option name="EMULATED" value="true" />
           </properties>
@@ -364,7 +388,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/fbTest.java</url>
-          <line>363</line>
+          <line>905</line>
           <properties class="fbTest" method="countnAnddSay">
             <option name="EMULATED" value="true" />
           </properties>
@@ -372,7 +396,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/fbTest.java</url>
-          <line>309</line>
+          <line>851</line>
           <properties class="fbTest" method="isEditDistanceOne">
             <option name="EMULATED" value="true" />
           </properties>
@@ -380,7 +404,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/fbTest.java</url>
-          <line>265</line>
+          <line>807</line>
           <properties class="fbTest" method="printSubsets">
             <option name="EMULATED" value="true" />
           </properties>
@@ -388,7 +412,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/fbTest.java</url>
-          <line>219</line>
+          <line>761</line>
           <properties class="fbTest" method="MaximumOfAllSubarraysOfSizeK">
             <option name="EMULATED" value="true" />
           </properties>
@@ -396,7 +420,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/fbTest.java</url>
-          <line>290</line>
+          <line>832</line>
           <properties class="fbTest" method="addNumberToArrayOfDigit">
             <option name="EMULATED" value="true" />
           </properties>
@@ -404,7 +428,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/fbTest.java</url>
-          <line>161</line>
+          <line>706</line>
           <properties class="fbTest" method="lenOfLongSubarr">
             <option name="EMULATED" value="true" />
           </properties>
@@ -412,7 +436,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/fbTest.java</url>
-          <line>197</line>
+          <line>739</line>
           <properties class="fbTest" method="sortInWave">
             <option name="EMULATED" value="true" />
           </properties>
@@ -420,7 +444,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/fbTest.java</url>
-          <line>109</line>
+          <line>656</line>
           <properties class="fbTest" method="printNGE">
             <option name="EMULATED" value="true" />
           </properties>
@@ -428,15 +452,91 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/fbTest.java</url>
-          <line>90</line>
+          <line>637</line>
           <properties class="fbTest" method="isPower">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="50" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/fbTest.java</url>
+          <line>617</line>
+          <properties class="fbTest" method="findCommonNumbers">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/fbTest.java</url>
+          <line>474</line>
+          <properties class="fbTest" method="rotateMatrix">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/fbTest.java</url>
+          <line>426</line>
+          <properties class="fbTest" method="minJumps">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/fbTest.java</url>
+          <line>351</line>
+          <properties class="fbTest" method="subtract">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/fbTest.java</url>
+          <line>330</line>
+          <properties class="fbTest" method="Permutations">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/fbTest.java</url>
+          <line>318</line>
+          <properties class="fbTest" method="is_palindrom">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/fbTest.java</url>
+          <line>247</line>
+          <properties class="fbTest" method="findSubstring">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/fbTest.java</url>
+          <line>181</line>
+          <properties class="fbTest" method="minimumSquare">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/fbTest.java</url>
+          <line>143</line>
+          <properties class="fbTest" method="KswapPermutationLargestNumber">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="51" />
+      <option name="time" value="72" />
     </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
@@ -490,10 +590,117 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/fbTest.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2835">
+          <caret line="189" lean-forward="true" selection-start-line="189" selection-end-line="189" />
+          <folding>
+            <element signature="e#2869#2878#0" expanded="true" />
+            <element signature="e#3065#3082#0" expanded="true" />
+            <element signature="e#3402#3419#0" expanded="true" />
+            <marker date="1541146863772" expanded="true" signature="1364:1465" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fbTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2550">
+          <caret line="170" column="32" selection-start-line="170" selection-start-column="18" selection-end-line="170" selection-end-column="32" />
+          <folding>
+            <element signature="e#2869#2878#0" expanded="true" />
+            <element signature="e#3065#3082#0" expanded="true" />
+            <element signature="e#3402#3419#0" expanded="true" />
+            <marker date="1541146863772" expanded="true" signature="1364:1465" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fbTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1980">
+          <caret line="132" selection-start-line="132" selection-end-line="132" />
+          <folding>
+            <element signature="e#2869#2878#0" expanded="true" />
+            <element signature="e#3065#3082#0" expanded="true" />
+            <element signature="e#3402#3419#0" expanded="true" />
+            <marker date="1541146863772" expanded="true" signature="1364:1465" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fbTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1605">
+          <caret line="107" selection-start-line="107" selection-end-line="107" />
+          <folding>
+            <element signature="e#2869#2878#0" expanded="true" />
+            <element signature="e#3065#3082#0" expanded="true" />
+            <element signature="e#3402#3419#0" expanded="true" />
+            <marker date="1541146863772" expanded="true" signature="1364:1465" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fbTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2415">
+          <caret line="161" column="57" selection-start-line="161" selection-start-column="57" selection-end-line="161" selection-end-column="57" />
+          <folding>
+            <element signature="e#2869#2878#0" expanded="true" />
+            <element signature="e#3065#3082#0" expanded="true" />
+            <element signature="e#3402#3419#0" expanded="true" />
+            <marker date="1541146863772" expanded="true" signature="1364:1465" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fbTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2415">
+          <caret line="161" column="57" selection-start-line="161" selection-start-column="57" selection-end-line="161" selection-end-column="57" />
+          <folding>
+            <element signature="e#2869#2878#0" expanded="true" />
+            <element signature="e#3065#3082#0" expanded="true" />
+            <element signature="e#3402#3419#0" expanded="true" />
+            <marker date="1541146863772" expanded="true" signature="1364:1465" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fbTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8205">
+          <caret line="547" column="79" selection-start-line="547" selection-start-column="74" selection-end-line="547" selection-end-column="79" />
+          <folding>
+            <element signature="e#2869#2878#0" expanded="true" />
+            <element signature="e#3065#3082#0" expanded="true" />
+            <element signature="e#3402#3419#0" expanded="true" />
+            <marker date="1541146863772" expanded="true" signature="1364:1465" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fbTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8205">
+          <caret line="547" column="79" selection-start-line="547" selection-start-column="74" selection-end-line="547" selection-end-column="79" />
+          <folding>
+            <element signature="e#2869#2878#0" expanded="true" />
+            <element signature="e#3065#3082#0" expanded="true" />
+            <element signature="e#3402#3419#0" expanded="true" />
+            <marker date="1541146863772" expanded="true" signature="1364:1465" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fbTest.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="645">
           <caret line="43" selection-start-line="43" selection-end-line="43" />
           <folding>
-            <marker date="1540095980456" expanded="true" signature="1198:1299" ph="..." />
+            <element signature="e#2869#2878#0" expanded="true" />
+            <element signature="e#3065#3082#0" expanded="true" />
+            <element signature="e#3402#3419#0" expanded="true" />
+            <marker date="1541146863772" expanded="true" signature="1364:1465" ph="..." />
           </folding>
         </state>
       </provider>
@@ -503,7 +710,10 @@
         <state relative-caret-position="6675">
           <caret line="445" selection-start-line="445" selection-end-line="445" />
           <folding>
-            <marker date="1540095980456" expanded="true" signature="1198:1299" ph="..." />
+            <element signature="e#2869#2878#0" expanded="true" />
+            <element signature="e#3065#3082#0" expanded="true" />
+            <element signature="e#3402#3419#0" expanded="true" />
+            <marker date="1541146863772" expanded="true" signature="1364:1465" ph="..." />
           </folding>
         </state>
       </provider>
@@ -644,10 +854,13 @@
     <entry file="file://$PROJECT_DIR$/src/postorder.java" />
     <entry file="file://$PROJECT_DIR$/src/fbTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="43">
-          <caret line="547" column="79" selection-start-line="547" selection-start-column="74" selection-end-line="547" selection-end-column="79" />
+        <state relative-caret-position="143">
+          <caret line="122" column="17" selection-start-line="122" selection-start-column="17" selection-end-line="122" selection-end-column="17" />
           <folding>
-            <marker date="1540095980456" expanded="true" signature="1198:1299" ph="..." />
+            <element signature="e#2869#2878#0" expanded="true" />
+            <element signature="e#3065#3082#0" expanded="true" />
+            <element signature="e#3402#3419#0" expanded="true" />
+            <marker date="1541146863772" expanded="true" signature="1364:1465" ph="..." />
           </folding>
         </state>
       </provider>

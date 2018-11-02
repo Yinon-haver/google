@@ -21,9 +21,26 @@ public class fbTest {
 //        split(sen,'h');
 
 //
-        String string = "this is a testaaaaa stringistt";
-        String  pattern = "tist";
-       System.out.print(findTheSmallestWindowInAStringContainingAllCharactersOfAnotherString(string,pattern));
+//
+//        int mat[][] =
+//        {
+//            {1, 2, 3, 4},
+//            {5, 6, 7, 8},
+//            {9, 10, 11, 12},
+//            {13, 14, 15, 16}
+//        };
+//
+//        rotateMatrix(mat);
+
+
+//int [] a = {1,3,2,4,6,1};
+//        minJumps(a);
+
+
+//
+//        int [] a = {1, 2, 3, 6};
+//        int [] b ={3,4,5,6,7,8,9,10};
+//        findCommonNumbers(a,b);
 
 
 //        int [] arr =  {1, 2, 3, 1, 4, 5, 2, 3, 6};
@@ -76,6 +93,41 @@ public class fbTest {
 //        int [] arr = {1,2,9,8};
 //       System.out.print( addNumberToArrayOfDigit(arr,1));
 
+//        String s_a ="8402";
+//        String s_b ="4201";
+//
+//        subtract(s_a, s_b);
+
+//        int [] arr = {2,3,4};
+//        int n = 2;
+//        Permutations(arr,n);
+
+//        String str = "aabbcbbaa";
+//       System.out.println( is_palindrom(str));
+
+//        String [] words={"foo", "bar"};
+//        String s="barfoothefoobarman";
+//        findSubstring(s,words);
+
+//
+//        int arr[] = {9, 2, 3, 4, 5, 6, 7, 8, 18, 0};
+//        int n = arr.length;
+//        int maxDiff = maxIndexDiff(arr, n);
+//        System.out.println(maxDiff);
+
+
+//        minimumSquare(13,29);
+
+//        int arr[] = {2,5,4};
+//        int k = 1;
+//
+//        KswapPermutationLargestNumber(arr, arr.length, k);
+//
+//        System.out.print("Largest permutation "
+//                + "after " + k + " swaps:\n");
+//
+//        for (int i = 0; i <  arr.length; ++i)
+//            System.out.print(arr[i] + " ");
 
 //isPower(9);
 //
@@ -85,6 +137,500 @@ public class fbTest {
 //        String commentString = "Hello /* this is a table */ Prashant";
 //        System.out.println(removeComment(commentString.toCharArray()));
 
+    }
+    // Function to calculate largest permutation after
+    // atmost K swaps
+    static void KswapPermutationLargestNumber(int arr[], int n, int k) {
+
+        // Auxiliary dictionary of storing the position
+        // of elements
+        int pos[] = new int[n+1];
+
+        for (int i = 0; i < n; ++i)
+            pos[arr[i]] = i;
+
+        for (int i = 0; i < n && k > 0; ++i) {
+
+            // If element is already i'th largest,
+            // then no need to swap
+            if (arr[i] == n-i)
+                continue;
+
+            // Find position of i'th largest value, n-i
+            int temp = pos[n-i];
+
+            // Swap the elements position
+            pos[arr[i]] = pos[n-i];
+            pos[n-i] = i;
+
+            // Swap the ith largest value with the
+            // current value at ith place
+            int tmp1 = arr[temp];
+            arr[temp] = arr[i];
+            arr[i] = tmp1;
+
+            // decrement number of swaps
+            --k;
+        }
+    }
+
+
+
+
+    // Returns min number of squares needed
+    static int minimumSquare(int a, int b) {
+        int result = 0, rem = 0;
+
+        int big=Math.max(a,b);
+        int min=Math.min(a,b);
+        // Iterate until small size side is
+        // greater then 0
+        while (big > 0) {
+            // Update result
+            result += min/big;
+            rem = min % big;
+            min = big;
+            big = rem;
+        }
+
+        return result;
+    }
+
+
+    static void swap(int a,int b)
+    {
+        int temp = a;
+        a = b;
+        b = temp;
+    }
+
+
+
+    /* For a given array arr[], returns the maximum j-i such that
+   arr[j] > arr[i] */
+    static int maxIndexDiff(int arr[], int n)
+    {
+        int maxDiff;
+        int i, j;
+
+        int RMax[] = new int[n];
+        int LMin[] = new int[n];
+
+        /* Construct LMin[] such that LMin[i] stores the minimum value
+           from (arr[0], arr[1], ... arr[i]) */
+        LMin[0] = arr[0];
+        for (i = 1; i < n; ++i)
+            LMin[i] = Math.min(arr[i], LMin[i - 1]);
+
+        /* Construct RMax[] such that RMax[j] stores the maximum value
+           from (arr[j], arr[j+1], ..arr[n-1]) */
+        RMax[n - 1] = arr[n - 1];
+        for (j = n - 2; j >= 0; --j)
+            RMax[j] = Math.max(arr[j], RMax[j + 1]);
+
+        /* Traverse both arrays from left to right to find optimum j - i
+           This process is similar to merge() of MergeSort */
+        i = 0; j = 0; maxDiff = -1;
+        while (j < n && i < n) {
+            if (LMin[i] < RMax[j]) {
+                maxDiff =Math.max(maxDiff, j - i);
+                j = j + 1;
+            }
+            else i = i + 1;
+        }
+
+        return maxDiff;
+    }
+
+
+
+    public  static List<Integer> findSubstring(String s, String[] words) {
+
+// You are given a string, s, and a list of words, words, that are all of the same length.
+// Find all starting indices of substring(s) in s that is a concatenation of each word in words exactly once and without any intervening characters.
+//
+//  For example, given: s="barfoothefoobarman" & words=["foo", "bar"], return [0,9].
+        ArrayList<Integer> result = new ArrayList<Integer>();
+        if(s==null||s.length()==0||words==null||words.length==0){
+            return result;
+        }
+
+        //frequency of words
+        HashMap<String, Integer> map = new HashMap<String, Integer>();
+        for(String w: words){
+            if(map.containsKey(w)){
+                map.put(w, map.get(w)+1);
+            }else{
+                map.put(w, 1);
+            }
+        }
+
+        int len = words[0].length();
+
+        for(int j=0; j<len; j++){
+            HashMap<String, Integer> currentMap = new HashMap<String, Integer>();
+            int start = j;//start index of start
+            int count = 0;//count totoal qualified words so far
+
+            for(int i=j; i<=s.length()-len; i=i+len){
+                String sub = s.substring(i, i+len);
+                if(map.containsKey(sub)){
+                    //set frequency in current map
+                    if(currentMap.containsKey(sub)){
+                        currentMap.put(sub, currentMap.get(sub)+1);
+                    }else{
+                        currentMap.put(sub, 1);
+                    }
+
+                    count++;
+
+                    while(currentMap.get(sub)>map.get(sub)){
+                        String left = s.substring(start, start+len);
+                        currentMap.put(left, currentMap.get(left)-1);
+
+                        count--;
+                        start = start + len;
+                    }
+
+
+                    if(count==words.length){
+                        result.add(start); //add to result
+
+                        //shift right and reset currentMap, count & start point
+                        String left = s.substring(start, start+len);
+                        currentMap.put(left, currentMap.get(left)-1);
+                        count--;
+                        start = start + len;
+                    }
+                }else{
+                    currentMap.clear();
+                    start = i+len;
+                    count = 0;
+                }
+            }
+        }
+
+        return result;
+    }
+
+
+
+    public static boolean is_palindrom(String s){
+
+        for(int t=0; t < s.length()/2; t++){
+            if(s.charAt(t) != s.charAt(s.length()-t-1)){
+                return false;
+            }
+        }
+        return true;
+    }
+
+
+
+    static  void Permutations(int [] input, int n ){
+        int j;
+        int index;
+        int number;
+        int length = input.length;
+        double total_permutations = Math.pow((double) length, (double) n );
+
+        for ( int i = 0 ; i < total_permutations ; i++ ) {
+            number = i;
+            for ( j = 0 ; j < n ; j++ ) {
+                index = number%length;
+                System.out.print(input[index]+",");
+                number /= length;
+            }
+
+            System.out.println("\n");
+        }
+    }
+
+
+
+    static String subtract(String s_a, String s_b) {
+        StringBuffer sb = new StringBuffer();
+        int i=0,j=0;
+        int a, b, c =0 ;
+        while (i<s_a.length()) {
+            a = s_a.charAt(i) - 48;
+            b = s_b.charAt(i)-48;
+            if (a > b) {
+                sb.append(a - c - b);
+                i++; j++;
+                c = 0;
+            } else {
+                sb.append(10 + a - c - b);
+                i++; j++;
+                c = 1;
+            }
+        }
+        return sb.reverse().toString();
+    }
+
+
+    static Boolean isOperand(char c) {
+        // If the character is a digit
+        // then it must be an operand
+        if(c >= 48 && c <= 57)
+            return true;
+        else
+            return false;
+    }
+
+
+    static double evaluatePrefix(String exprsn) {
+        Stack<Double> Stack = new Stack<Double>();
+
+        for (int j = exprsn.length() - 1; j >= 0; j--) {
+
+            // Push operand to Stack
+            // To convert exprsn[j] to digit subtract
+            // '0' from exprsn[j].
+            if (isOperand(exprsn.charAt(j)))
+                Stack.push((double)(exprsn.charAt(j) - 48));
+
+            else {
+
+                // Operator encountered
+                // Pop two elements from Stack
+                double o1 = Stack.peek();
+                Stack.pop();
+                double o2 = Stack.peek();
+                Stack.pop();
+
+                // Use switch case to operate on o1
+                // and o2 and perform o1 O o2.
+                switch (exprsn.charAt(j)) {
+                    case '+':
+                        Stack.push(o1 + o2);
+                        break;
+                    case '-':
+                        Stack.push(o1 - o2);
+                        break;
+                    case '*':
+                        Stack.push(o1 * o2);
+                        break;
+                    case '/':
+                        Stack.push(o1 / o2);
+                        break;
+                }
+            }
+        }
+
+        return Stack.peek();
+    }
+
+
+
+    static int minJumps(int arr[]) {
+        if (arr.length <= 1)
+            return 0;
+
+        // Return -1 if not possible to jump
+        if (arr[0] == 0)
+            return -1;
+
+        // initialization
+        int maxReach = arr[0];
+        int step = arr[0];
+        int jump = 1;
+
+
+        // Start traversing array
+        for (int i = 1; i < arr.length; i++)
+        {
+            // Check if we have reached the end of the array
+            if (i == arr.length - 1)
+                return jump;
+
+            // updating maxReach
+            maxReach = Math.max(maxReach, i+arr[i]);
+
+            // we use a step to get to the current index
+            step--;
+
+            // If no further steps left
+            if (step == 0)
+            {
+                //  we must have used a jump
+                jump++;
+
+                //Check if the current index/position  or lesser index
+                // is the maximum reach point from the previous indexes
+                if(i>=maxReach)
+                    return -1;
+
+                // re-initialize the steps to the amount
+                // of steps to reach maxReach from position i.
+                step = maxReach - i;
+            }
+        }
+
+        return -1;
+    }
+
+    // by 90 degrees in anti-clockwise direction
+   static void rotateMatrix(int mat[][])
+    {
+        int N=4;
+        // Consider all squares one by one
+        for (int x = 0; x < N / 2; x++)
+        {
+            // Consider elements in group of 4 in
+            // current square
+            for (int y = x; y < N-x-1; y++)
+            {
+                // store current cell in temp variable
+                int temp = mat[x][y];
+
+                // move values from right to top
+                mat[x][y] = mat[y][N-1-x];
+
+                // move values from bottom to right
+                mat[y][N-1-x] = mat[N-1-x][N-1-y];
+
+                // move values from left to bottom
+                mat[N-1-x][N-1-y] = mat[N-1-y][x];
+
+                // assign temp to left
+                mat[N-1-y][x] = temp;
+            }
+        }
+    }
+
+
+
+
+
+    static void PrintMinNumberForPattern(String arr) {
+
+//        Input: D        Output: 21
+//        Input: I        Output: 12
+//        Input: DD       Output: 321
+//        Input: II       Output: 123
+//        Input: DIDI     Output: 21435
+//        Input: IIDDD    Output: 126543
+//        Input: DDIDDIID Output: 321654798
+        // Initialize current_max (to make sure that
+        // we don't use repeated character
+        int curr_max = 0;
+
+        // Initialize last_entry (Keeps track for
+        // last printed digit)
+        int last_entry = 0;
+
+        int j;
+
+        // Iterate over input array
+        for (int i=0; i<arr.length(); i++) {
+            // Initialize 'noOfNextD' to get count of
+            // next D's available
+            int noOfNextD = 0;
+
+            switch(arr.charAt(i))
+            {
+                case 'I':
+                    // If letter is 'I'
+
+                    // Calculate number of next consecutive D's
+                    // available
+                    j = i+1;
+                    while (arr.charAt(j) == 'D' && j < arr.length())
+                    {
+                        noOfNextD++;
+                        j++;
+                    }
+
+                    if (i==0)
+                    {
+                        curr_max = noOfNextD + 2;
+
+                        // If 'I' is first letter, print incremented
+                        // sequence from 1
+                        System.out.println(++last_entry);
+                        System.out.println(curr_max);
+
+                        // Set max digit reached
+                        last_entry = curr_max;
+                    }
+                    else
+                    {
+                        // If not first letter
+
+                        // Get next digit to print
+                        curr_max = curr_max + noOfNextD + 1;
+
+                        // Print digit for I
+                        last_entry = curr_max;
+                        System.out.println(last_entry);
+                    }
+
+                    // For all next consecutive 'D' print
+                    // decremented sequence
+                    for (int k=0; k<noOfNextD; k++)
+                    {
+                        System.out.println( --last_entry);
+                        i++;
+                    }
+                    break;
+
+                // If letter is 'D'
+                case 'D':
+                    if (i == 0)
+                    {
+                        // If 'D' is first letter in sequence
+                        // Find number of Next D's available
+                        j = i+1;
+                        while (arr.charAt(j) == 'D' && j < arr.length())
+                        {
+                            noOfNextD++;
+                            j++;
+                        }
+
+                        // Calculate first digit to print based on
+                        // number of consecutive D's
+                        curr_max = noOfNextD + 2;
+
+                        // Print twice for the first time
+                        System.out.println( curr_max + " " + (curr_max - 1));
+
+                        // Store last entry
+                        last_entry = curr_max - 1;
+                    }
+                    else
+                    {
+                        // If current 'D' is not first letter
+
+                        // Decrement last_entry
+                        System.out.println( last_entry-1);
+                        last_entry--;
+                    }
+                    break;
+            }
+        }
+        System.out.print(" ");
+    }
+
+
+
+    static ArrayList<Integer> findCommonNumbers(int [] a, int [] b){
+        ArrayList<Integer> ans = new ArrayList<>();
+        int minLe = Math.min(a.length,b.length);
+        int i =0;
+        int j =0;
+        while (i< minLe){
+           if(a[i] < b[j]){
+               i++;
+           }else if (a[i] > b[j]){
+               j++;
+           }else {
+               ans.add(a[i]);
+               i++;
+               j++;
+           }
+        }
+        return ans;
     }
 
 
@@ -129,8 +675,7 @@ public class fbTest {
                    next, then a) print the pair b) keep
                    popping while elements are smaller and
                    stack is not empty */
-                while (element < next)
-                {
+                while (element < next) {
                     System.out.println(element + " --> " + next);
                     if (s.isEmpty() == true)
                         break;
@@ -151,8 +696,7 @@ public class fbTest {
         /* After iterating over the loop, the remaining
            elements in stack do not have the next greater
            element, so print -1 for them */
-        while (s.isEmpty() == false)
-        {
+        while (s.isEmpty() == false) {
             element = s.pop();
             next = -1;
             System.out.println(element + " -- " + next);
@@ -160,9 +704,6 @@ public class fbTest {
     }
 
     static int lenOfLongSubarr(int arr[], int n, int k) {
-
-        // unordered_map 'um' implemented
-        // as hash table
         HashMap<Integer,Integer> um = new HashMap<>();
         int sum = 0, maxLen = 0;
 
@@ -366,20 +907,10 @@ public class fbTest {
         if (n == 1)     return "1";
         if (n == 2)     return "11";
 
-        // Find n'th term by generating
-        // all terms from 3 to n-1.
-        // Every term is generated
-        // using previous term
 
-        // Initialize previous term
         String str = "11";
         for (int i = 3; i <= n; i++) {
-            // In below for loop, previous
-            // character is processed in
-            // current iteration. That is
-            // why a dummy character is
-            // added to make sure that loop
-            // runs one extra iteration.
+
             str += '$';
             int len = str.length();
 
